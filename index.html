@@ -150,6 +150,8 @@ Error message and password prompt
 
 <li>$:/config/AutoFocus</li>
 
+<li>$:/config/AutoSave</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
@@ -198,11 +200,15 @@ Error message and password prompt
 
 <li>7th March 2025</li>
 
+<li>electron 缓存？？</li>
+
 <li>Hello</li>
 
 <li>New Tiddler</li>
 
 <li>New Tiddler 1</li>
+
+<li>New Tiddler 2 Test</li>
 
 <li>oeyoews</li>
 
@@ -222,6 +228,8 @@ Error message and password prompt
 {"title":"$:/config/AnimationDuration","created":"20250308121045633","modified":"20250308121045755","type":"text/vnd.tiddlywiki","text":"100","revision":"0","bag":"default"}
 ,
 {"title":"$:/config/AutoFocus","created":"20250307130524098","creator":"oeyoews","modified":"20250307130524098","modifier":"oeyoews","type":"text/vnd.tiddlywiki","text":"text","revision":"0","bag":"default"}
+,
+{"title":"$:/config/AutoSave","created":"20250309062748297","modified":"20250309071009712","type":"text/vnd.tiddlywiki","text":"yes","revision":"0","bag":"default"}
 ,
 {"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all","created":"20250307130805303","creator":"oeyoews","modified":"20250307130805303","modifier":"oeyoews","type":"text/vnd.tiddlywiki","text":"show","revision":"0","bag":"default"}
 ,
@@ -259,7 +267,7 @@ Error message and password prompt
 ,
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no","revision":"0","bag":"default"}
 ,
-{"title":"$:/StoryList","text":"","list":"Hello","revision":"1","bag":"default"}
+{"title":"$:/StoryList","text":"","list":"[[electron 缓存？？]] Hello","revision":"1","bag":"default"}
 ,
 {"title":"$:/themes/tiddlywiki/snowwhite","name":"Snow White","author":"JeremyRuston","core-version":">=5.0.0","plugin-type":"theme","description":"Emphasises individual tiddlers","dependents":"$:/themes/tiddlywiki/vanilla","plugin-priority":"0","version":"5.3.6","type":"application/json","text":"{\"tiddlers\":{\"$:/themes/tiddlywiki/snowwhite/base\":{\"title\":\"$:/themes/tiddlywiki/snowwhite/base\",\"tags\":\"[[$:/tags/Stylesheet]]\",\"text\":\"\\\\define sidebarbreakpoint-minus-one()\\n\u003C$text text={{{ [{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}removesuffix[px]subtract[1]addsuffix[px]] ~[{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}] }}}/>\\n\\\\end\\n\\n\\\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\\n\\n.tc-sidebar-header {\\n\\ttext-shadow: 0 1px 0 \u003C\u003Ccolour sidebar-foreground-shadow>>;\\n}\\n\\n.tc-tiddler-info {\\n\\t\u003C\u003Cbox-shadow \\\"inset 1px 2px 3px rgba(0,0,0,0.1)\\\">>\\n}\\n\\n@media screen {\\n\\t.tc-tiddler-frame {\\n\\t\\t\u003C\u003Cbox-shadow \\\"1px 1px 5px rgba(0, 0, 0, 0.3)\\\">>\\n\\t}\\n}\\n\\n@media (max-width: \u003C\u003Csidebarbreakpoint-minus-one>>) {\\n\\t.tc-tiddler-frame {\\n\\t\\t\u003C\u003Cbox-shadow none>>\\n\\t}\\n}\\n\\n.tc-page-controls button svg, .tc-tiddler-controls button svg, .tc-topbar button svg {\\n\\t\u003C\u003Ctransition \\\"fill 150ms ease-in-out\\\">>\\n}\\n\\n.tc-tiddler-controls button.tc-selected,\\n.tc-page-controls button.tc-selected {\\n\\t\u003C\u003Cfilter \\\"drop-shadow(0px -1px 2px rgba(0,0,0,0.25))\\\">>\\n}\\n\\n.tc-tiddler-frame input.tc-edit-texteditor,\\n.tc-tiddler-frame select.tc-edit-texteditor {\\n\\t\u003C\u003Cbox-shadow \\\"inset 0 1px 8px rgba(0, 0, 0, 0.15)\\\">>\\n}\\n\\n.tc-edit-tags {\\n\\t\u003C\u003Cbox-shadow \\\"inset 0 1px 8px rgba(0, 0, 0, 0.15)\\\">>\\n}\\n\\n.tc-tiddler-frame .tc-edit-tags input.tc-edit-texteditor {\\n\\t\u003C\u003Cbox-shadow \\\"none\\\">>\\n\\tborder: none;\\n\\toutline: none;\\n}\\n\\ntextarea.tc-edit-texteditor {\\n\\tfont-family: {{$:/themes/tiddlywiki/vanilla/settings/editorfontfamily}};\\n}\\n\\ncanvas.tc-edit-bitmapeditor  {\\n\\t\u003C\u003Cbox-shadow \\\"2px 2px 5px rgba(0, 0, 0, 0.5)\\\">>\\n}\\n\\n.tc-drop-down {\\n\\tborder-radius: 4px;\\n\\t\u003C\u003Cbox-shadow \\\"2px 2px 10px rgba(0, 0, 0, 0.5)\\\">>\\n}\\n\\n.tc-block-dropdown {\\n\\tborder-radius: 4px;\\n\\t\u003C\u003Cbox-shadow \\\"2px 2px 10px rgba(0, 0, 0, 0.5)\\\">>\\n}\\n\\n.tc-modal {\\n\\tborder-radius: 6px;\\n\\t\u003C\u003Cbox-shadow \\\"0 3px 7px rgba(0,0,0,0.3)\\\">>\\n}\\n\\n.tc-modal-footer {\\n\\tborder-radius: 0 0 6px 6px;\\n\\t\u003C\u003Cbox-shadow \\\"inset 0 1px 0 #fff\\\">>;\\n}\\n\\n\\n.tc-alert {\\n\\tborder-radius: 6px;\\n\\t\u003C\u003Cbox-shadow \\\"0 3px 7px rgba(0,0,0,0.6)\\\">>\\n}\\n\\n.tc-notification {\\n\\tborder-radius: 6px;\\n\\t\u003C\u003Cbox-shadow \\\"0 3px 7px rgba(0,0,0,0.3)\\\">>\\n\\ttext-shadow: 0 1px 0 rgba(255,255,255, 0.8);\\n}\\n\\n.tc-sidebar-lists .tc-tab-set .tc-tab-divider {\\n\\tborder-top: none;\\n\\theight: 1px;\\n\\t\u003C\u003Cbackground-linear-gradient \\\"left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%\\\">>\\n}\\n\\n.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {\\n\\t\u003C\u003Cbackground-linear-gradient \\\"left, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 100%\\\">>\\n}\\n\\n.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {\\n\\t\u003C\u003Cbackground-linear-gradient \\\"left, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%\\\">>\\n}\\n\\n.tc-message-box img {\\n\\t\u003C\u003Cbox-shadow \\\"1px 1px 3px rgba(0,0,0,0.5)\\\">>\\n}\\n\\n.tc-plugin-info {\\n\\t\u003C\u003Cbox-shadow \\\"1px 1px 3px rgba(0,0,0,0.5)\\\">>\\n}\\n\"}}}","revision":"0","bag":"default"}
 ,
@@ -271,11 +279,15 @@ Error message and password prompt
 ,
 {"title":"7th March 2025","created":"20250307130451993","creator":"oeyoews","modified":"20250307130530023","modifier":"oeyoews","tags":"Journal","type":"text/vnd.tiddlywiki","text":"demo demo","revision":"0","bag":"default"}
 ,
+{"title":"electron 缓存？？","created":"20250309105409241","modified":"20250309105452823","tags":"","type":"text/vnd.tiddlywiki","text":"任务栏的描述总是旧的， 好像是系统注册的没有更新？","revision":"0","bag":"default"}
+,
 {"title":"Hello","created":"20250307130722985","creator":"oeyoews","modified":"20250309055650724","modifier":"oeyoews","tags":"Hello","type":"text/vnd.tiddlywiki","text":"> 这是使用tiddlywiki app 一键发布到GitHub Pages的网站页面.\n\n!! GitHub Pages\n\n如果你配置了tiddlywiki 的Saving github 模块的配置, 那么tiddlywiki app 也允许你一键发布到GitHub pages.\n\n* 注意配置后要重启app\n* 注意发布成功后要等待1分钟左右\n* github pages 网站有缓存， 如果不是最新的页面， 需要你强制刷新你浏览期的页面。\n\n!! Site\n\nhttps://github.com/oeyoews/tiddlywiki-app-website-deploy","revision":"0","bag":"default"}
 ,
 {"title":"New Tiddler","created":"20250308120946668","modified":"20250308120950886","tags":"","type":"text/vnd.tiddlywiki","text":"this dem o","revision":"0","bag":"default"}
 ,
 {"title":"New Tiddler 1","created":"20250308121312154","modified":"20250308121339653","tags":"","type":"text/vnd.tiddlywiki","text":"thi this a demo 测试内容的方法介绍的内容\n\n* this dem od emo","revision":"0","bag":"default"}
+,
+{"title":"New Tiddler 2 Test","created":"20250309071109964","modified":"20250309071122732","tags":"","type":"text/vnd.tiddlywiki","revision":"0","bag":"default"}
 ,
 {"title":"oeyoews","created":"20250307130840950","creator":"oeyoews","modified":"20250307130840950","modifier":"oeyoews","type":"text/vnd.tiddlywiki","revision":"0","bag":"default"}
 
